@@ -2,7 +2,7 @@ package com.chuckle.Exception;
 
 import com.auth0.jwt.exceptions.TokenExpiredException;
 import com.chuckle.Exception.domain.*;
-import com.chuckle.domain.HttpResponse;
+import com.chuckle.security.domain.HttpResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.servlet.error.ErrorController;

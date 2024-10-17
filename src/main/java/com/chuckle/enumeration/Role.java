@@ -1,6 +1,6 @@
 package com.chuckle.enumeration;
 
-import static com.chuckle.constant.Authority.*;
+import static com.chuckle.security.constant.Authority.*;
 
 public enum Role {
     ROLE_USER(USER_AUTHORITIES),

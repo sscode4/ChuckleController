@@ -14,8 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-import static com.chuckle.constant.SecurityConstant.OPTIONS_HTTP_METHOD;
-import static com.chuckle.constant.SecurityConstant.TOKEN_PREFIX;
+import static com.chuckle.security.constant.SecurityConstant.OPTIONS_HTTP_METHOD;
+import static com.chuckle.security.constant.SecurityConstant.TOKEN_PREFIX;
 import static org.springframework.http.HttpHeaders.AUTHORIZATION;
 import static org.springframework.http.HttpStatus.OK;
 

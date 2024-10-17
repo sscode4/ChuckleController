@@ -1,6 +1,6 @@
 package com.chuckle.repository;
 
-import com.chuckle.domain.User;
+import com.chuckle.security.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {
