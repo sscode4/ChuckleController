@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+// The @RestController annotation was introduced in Spring 4.0 to simplify the creation of RESTful web services.
+// It’s a convenience annotation that combines @Controller and @ResponseBody –
+// which eliminates the need to annotate every request handling method of the controller class with the @ResponseBody annotation.
 @RestController
 public class ProcessorController {
 
@@ -23,7 +26,7 @@ public class ProcessorController {
     ProcessorServiceImpl processorService;
 
 
-    @GetMapping("/departments")
+    @GetMapping("/processors")
     public ResponseEntity<ApiResponse<Processor>> getProcessorById(@PathVariable Long id) {
         Processor processor = processorService.getProcessorById(id);
 
