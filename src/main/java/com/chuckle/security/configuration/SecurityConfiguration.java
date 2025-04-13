@@ -1,8 +1,8 @@
 package com.chuckle.security.configuration;
 
-import com.chuckle.filter.JwtAccessDeniedHandler;
-import com.chuckle.filter.JwtAuthenticationEntryPoint;
-import com.chuckle.filter.JwtAuthorizationFilter;
+import com.chuckle.security.filter.JwtAccessDeniedHandler;
+import com.chuckle.security.filter.JwtAuthenticationEntryPoint;
+import com.chuckle.security.filter.JwtAuthorizationFilter;
 import com.chuckle.security.constant.SecurityConstant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

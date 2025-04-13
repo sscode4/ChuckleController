@@ -16,36 +16,36 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class S3Config {
 
+//
+//    @Value("${cloud.aws.credentials.access-key}")
+//    private String awsAccessKey;
 
-    @Value("${cloud.aws.credentials.access-key}")
-    private String awsAccessKey;
-
-    @Value("${cloud.aws.credentials.secret-key}")
-    private String awsSecretKey;
-
-    @Value("${cloud.aws.region.static}")
-    private String region;
-
-
-    @Bean
-    public AmazonS3 client() {
-
-        AWSCredentials awsCredentials = new BasicAWSCredentials(awsAccessKey, awsSecretKey);
-
-        AmazonS3 awsS3 = AmazonS3ClientBuilder.standard().withCredentials(new AWSCredentialsProvider() {
-            @Override
-            public AWSCredentials getCredentials() {
-                return awsCredentials;
-            }
-
-            @Override
-            public void refresh() {
-
-            }
-        }).withRegion(region).build();
-         return  awsS3;
-
-    }
+//    @Value("${cloud.aws.credentials.secret-key}")
+//    private String awsSecretKey;
+//
+//    @Value("${cloud.aws.region.static}")
+//    private String region;
+//
+//
+//    @Bean
+//    public AmazonS3 client() {
+//
+//        AWSCredentials awsCredentials = new BasicAWSCredentials(awsAccessKey, awsSecretKey);
+//
+//        AmazonS3 awsS3 = AmazonS3ClientBuilder.standard().withCredentials(new AWSCredentialsProvider() {
+//            @Override
+//            public AWSCredentials getCredentials() {
+//                return awsCredentials;
+//            }
+//
+//            @Override
+//            public void refresh() {
+//
+//            }
+//        }).withRegion(region).build();
+//         return  awsS3;
+//
+//    }
 
 }
 

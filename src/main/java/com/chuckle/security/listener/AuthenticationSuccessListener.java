@@ -1,7 +1,7 @@
 package com.chuckle.security.listener;
 
 import com.chuckle.security.domain.UserPrincipal;
-import com.chuckle.service.impl.service.loginAttemptservice.LoginAttemptService;
+import com.chuckle.items.service.impl.service.loginAttemptservice.LoginAttemptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;
 import org.springframework.security.authentication.event.AuthenticationSuccessEvent;
